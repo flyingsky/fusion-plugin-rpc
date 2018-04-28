@@ -14,4 +14,4 @@ declare var __BROWSER__: Boolean;
 const RPC = __BROWSER__ ? browserDataFetching : serverDataFetching;
 
 export default RPC;
-export {BodyParserOptionsToken, RPCToken, RPCHandlersToken} from './tokens';
+export {RPCToken, RPCHandlersToken} from './tokens';

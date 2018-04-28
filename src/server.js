@@ -9,11 +9,12 @@
 
 import {createPlugin, memoize} from 'fusion-core';
 import type {Context, FusionPlugin} from 'fusion-core';
+import {BodyParserOptionsToken} from 'fusion-tokens';
 //$FlowFixMe
 import {UniversalEventsToken} from 'fusion-plugin-universal-events';
 import bodyparser from 'koa-bodyparser';
 import MissingHandlerError from './missing-handler-error';
-import {BodyParserOptionsToken, RPCHandlersToken} from './tokens';
+import {RPCHandlersToken} from './tokens';
 
 const statKey = 'rpc:method';
 
